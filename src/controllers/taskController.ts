@@ -5,9 +5,7 @@ import { createTask, deleteTask, getTaskById, getUserTask, updateTask as updateT
 export const create = async (req: AuthRequest, res: Response) => {
     try{
         const task = await createTask(req.body, req.user!.userId);
-        res.status(201).json({
-            message: "Task created successfully",
-        }); 
+        res.status(201).json(task);
     } catch(error: any) {
         res.status(400).json({
             message: error.message

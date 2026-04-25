@@ -8,6 +8,7 @@ export const register = async (req: Request, res: Response) => {
             res.status(400).json({ 
                 message: 'All fields are required'
             });
+            return;
         }
 
         const { user, token } = await registerUser(name, email, password);
@@ -36,6 +37,7 @@ export const login = async (req: Request, res: Response) => {
             res.status(400).json({
                 message: 'Email and password are required'
             });
+            return;
         }
 
         const { user, token } = await loginUser(email, password);

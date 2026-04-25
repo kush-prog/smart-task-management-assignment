@@ -12,7 +12,6 @@ import errorMiddleware from './middleware/errorMiddleware';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Middleware for requests
 app.use(express.json());
@@ -30,13 +29,5 @@ app.use('/api/analytics', analyticsRoutes);
 
 // Error middleware for any request error
 app.use(errorMiddleware);
-
-
-// connect to DB
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-});
 
 export default app;
