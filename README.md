@@ -29,7 +29,7 @@ Follow these instructions to run the project locally on your machine.
 ### 2. Installation
 Clone the repository and install dependencies:
 ```bash
-git clone <repository-url>
+git clone [https://github.com/kush-prog/smart-task-management-assignment.git]
 cd node_final_assignment
 npm install
 ```
@@ -41,7 +41,7 @@ Create a `.env` file in the root of your project and add the following configura
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secure_random_jwt_secret_key
-JWT_EXPIRES_IN=7d
+JWT_EXPIRES_IN=1d
 CLIENT_URL=http://localhost:3000
 ```
 
@@ -65,7 +65,7 @@ npm run test:coverage
 ### 6. Production Build
 To compile the TypeScript code to JavaScript and run the production build:
 ```bash
-npm run build
+npm install --include=dev && npm run build
 npm start
 ```
 
