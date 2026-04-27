@@ -37,7 +37,7 @@ Follow these instructions to run the project locally on your machine.
 
 ### 2. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone [https://github.com/kush-prog/smart-task-management-assignment.git]
 cd node_final_assignment
 ```
 
@@ -85,7 +85,7 @@ npm run test:coverage
 ### 7. Production Build
 Compile the TypeScript code into optimized JavaScript:
 ```bash
-npm run build
+npm install --include=dev && npm run build
 npm start
 ```
 
