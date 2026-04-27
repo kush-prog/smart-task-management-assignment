@@ -37,7 +37,7 @@ Follow these instructions to run the project locally on your machine.
 
 ### 2. Clone the Repository
 ```bash
-git clone [https://github.com/kush-prog/smart-task-management-assignment.git]
+git clone https://github.com/kush-prog/smart-task-management-assignment.git
 cd node_final_assignment
 ```
 
@@ -62,7 +62,7 @@ JWT_SECRET=your_secure_random_jwt_secret_key
 JWT_EXPIRES_IN=7d
 
 # CORS Allowed Origin
-CLIENT_URL=https://smart-task-management-hgf9.onrender.com
+CLIENT_URL=http://localhost:3000
 ```
 
 ### 5. Running the Application
@@ -70,7 +70,7 @@ Start the development server (uses `nodemon` and `ts-node` for hot-reloading):
 ```bash
 npm run dev
 ```
-The server will start at `https://smart-task-management-hgf9.onrender.com`.
+The server will start at `http://localhost:3000`.
 
 ### 6. Running the Test Suite
 The project uses an in-memory MongoDB server for testing, meaning tests won't affect your real database.
