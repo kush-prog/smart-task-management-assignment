@@ -62,7 +62,7 @@ JWT_SECRET=your_secure_random_jwt_secret_key
 JWT_EXPIRES_IN=7d
 
 # CORS Allowed Origin
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=https://smart-task-management-hgf9.onrender.com
 ```
 
 ### 5. Running the Application
@@ -70,7 +70,7 @@ Start the development server (uses `nodemon` and `ts-node` for hot-reloading):
 ```bash
 npm run dev
 ```
-The server will start at `http://localhost:5000`.
+The server will start at `https://smart-task-management-hgf9.onrender.com`.
 
 ### 6. Running the Test Suite
 The project uses an in-memory MongoDB server for testing, meaning tests won't affect your real database.
@@ -110,7 +110,7 @@ Since admins have sweeping privileges to view all users and system tasks, they m
 
 Once the server is running, the easiest way to interact with the API is through the built-in Swagger interface.
 
-**Swagger UI URL:** [http://localhost:5000/api-docs](http://localhost:5000/api-docs)
+**Swagger UI URL:** [https://smart-task-management-hgf9.onrender.com/api-docs](https://smart-task-management-hgf9.onrender.com/api-docs)
 
 > **Note on Authentication:** To use protected routes in Swagger, first hit the `/api/auth/login` endpoint, copy the `token` from the response, click the green **"Authorize"** button at the top of the page, and paste your token.
 
