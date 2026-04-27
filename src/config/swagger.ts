@@ -12,6 +12,10 @@ const options: swaggerJsdoc.Options = {
         },
         servers: [
             {
+                url: 'https://smart-task-management-hgf9.onrender.com',
+                description: 'Production server',
+            },
+            {
                 url: 'http://localhost:5000',
                 description: 'Development server',
             }
@@ -38,5 +42,5 @@ const swaggerSpec = swaggerJsdoc(options);
 
 export const setupSwagger = (app: Application) => {
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-    console.log('Swagger docs available at http://localhost:5000/api-docs');
+    console.log('Swagger docs available at /api-docs');
 };
