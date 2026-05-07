@@ -53,6 +53,6 @@ router.get('/users', getUsers);
  *       500:
  *         description: Server error
  */
-router.get('/taska', getTask);
+router.get('/tasks', getTask);
 
 export default router;
